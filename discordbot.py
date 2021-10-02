@@ -19,4 +19,5 @@ async def on_message(message):
    if message.content == "김윤상":
     await message.channel.send('병신!!!')
 
-client.run(token)
+access_token =  os.environ['BOT_TOKEN']
+client.run(access_token)
